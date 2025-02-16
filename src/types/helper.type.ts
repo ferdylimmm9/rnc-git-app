@@ -1,0 +1,1 @@
+export type PredefinedFirst<T extends string> = T | (string & {});

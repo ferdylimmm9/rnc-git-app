@@ -1,24 +1,40 @@
-import { Button, Text } from '@react-navigation/elements';
-import { StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet, TouchableOpacity, View } from "react-native";
+import Container from "../../components/container";
+import { dummyInformation, dummyList } from "../../dummy";
+import { FlashList } from "@shopify/flash-list";
+import RepositoryCard from "../../components/repository-card";
+import OrganizationCard from "../../components/company-card";
+import TextInput from "../../components/text-input";
+import { useNavigation } from "@react-navigation/native";
 
 export function Home() {
+  const { navigate } = useNavigation();
   return (
-    <View style={styles.container}>
-      <Text>Home Screen</Text>
-      <Text>Open up 'src/App.tsx' to start working on your app!</Text>
-      <Button screen="Profile" params={{ user: 'jane' }}>
-        Go to Profile
-      </Button>
-      <Button screen="Settings">Go to Settings</Button>
-    </View>
+    <Container>
+      <View style={styles.container}>
+        <TouchableOpacity onPress={() => navigate("Search")}>
+          <TextInput placeholder="Search Repository" readOnly />
+        </TouchableOpacity>
+        <OrganizationCard data={dummyInformation} />
+        <FlashList
+          data={dummyList}
+          estimatedItemSize={5}
+          estimatedListSize={{
+            height: 100,
+            width: Dimensions.get("screen").width,
+          }}
+          renderItem={({ item }) => {
+            return <RepositoryCard data={item} key={item.id} />;
+          }}
+        />
+      </View>
+    </Container>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: 10,
+    gap: 16,
   },
 });

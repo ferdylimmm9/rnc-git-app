@@ -9,7 +9,7 @@
     "newArchEnabled": true,
     "scheme": "rncgitapp",
     "ios": {
-      "supportsTablet": true,
+      "supportsTablet": false,
       "bundleIdentifier": "com.ferdy.lim.rncgitapp"
     },
     "android": {
