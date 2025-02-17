@@ -4564,9 +4564,9 @@ export const dummyInformation = {
   is_verified: false,
   has_organization_projects: true,
   has_repository_projects: true,
-  public_repos: 28,
+  public_repos: 29,
   public_gists: 0,
-  followers: 2474,
+  followers: 2478,
   following: 0,
   html_url: "https://github.com/react-native-community",
   created_at: "2016-07-03T18:18:20Z",
@@ -4575,145 +4575,1291 @@ export const dummyInformation = {
   type: "Organization",
 };
 
-export const detailDummyInformation = {
-  "id": 175489142,
-  "node_id": "MDEwOlJlcG9zaXRvcnkxNzU0ODkxNDI=",
-  "name": "upgrade-helper",
-  "full_name": "react-native-community/upgrade-helper",
-  "private": false,
-  "owner": {
-    "login": "react-native-community",
-    "id": 20269980,
-    "node_id": "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
-    "avatar_url": "https://avatars.githubusercontent.com/u/20269980?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/react-native-community",
-    "html_url": "https://github.com/react-native-community",
-    "followers_url": "https://api.github.com/users/react-native-community/followers",
-    "following_url": "https://api.github.com/users/react-native-community/following{/other_user}",
-    "gists_url": "https://api.github.com/users/react-native-community/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/react-native-community/subscriptions",
-    "organizations_url": "https://api.github.com/users/react-native-community/orgs",
-    "repos_url": "https://api.github.com/users/react-native-community/repos",
-    "events_url": "https://api.github.com/users/react-native-community/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/react-native-community/received_events",
-    "type": "Organization",
-    "user_view_type": "public",
-    "site_admin": false
+export const dummyRepositoryDetailInformation = {
+  id: 175489142,
+  node_id: "MDEwOlJlcG9zaXRvcnkxNzU0ODkxNDI=",
+  name: "upgrade-helper",
+  full_name: "react-native-community/upgrade-helper",
+  private: false,
+  owner: {
+    login: "react-native-community",
+    id: 20269980,
+    node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+    avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+    gravatar_id: "",
+    url: "https://api.github.com/users/react-native-community",
+    html_url: "https://github.com/react-native-community",
+    followers_url:
+      "https://api.github.com/users/react-native-community/followers",
+    following_url:
+      "https://api.github.com/users/react-native-community/following{/other_user}",
+    gists_url:
+      "https://api.github.com/users/react-native-community/gists{/gist_id}",
+    starred_url:
+      "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+    subscriptions_url:
+      "https://api.github.com/users/react-native-community/subscriptions",
+    organizations_url:
+      "https://api.github.com/users/react-native-community/orgs",
+    repos_url: "https://api.github.com/users/react-native-community/repos",
+    events_url:
+      "https://api.github.com/users/react-native-community/events{/privacy}",
+    received_events_url:
+      "https://api.github.com/users/react-native-community/received_events",
+    type: "Organization",
+    user_view_type: "public",
+    site_admin: false,
   },
-  "html_url": "https://github.com/react-native-community/upgrade-helper",
-  "description": "⚛️ A web tool to support React Native developers in upgrading their apps.",
-  "fork": false,
-  "url": "https://api.github.com/repos/react-native-community/upgrade-helper",
-  "forks_url": "https://api.github.com/repos/react-native-community/upgrade-helper/forks",
-  "keys_url": "https://api.github.com/repos/react-native-community/upgrade-helper/keys{/key_id}",
-  "collaborators_url": "https://api.github.com/repos/react-native-community/upgrade-helper/collaborators{/collaborator}",
-  "teams_url": "https://api.github.com/repos/react-native-community/upgrade-helper/teams",
-  "hooks_url": "https://api.github.com/repos/react-native-community/upgrade-helper/hooks",
-  "issue_events_url": "https://api.github.com/repos/react-native-community/upgrade-helper/issues/events{/number}",
-  "events_url": "https://api.github.com/repos/react-native-community/upgrade-helper/events",
-  "assignees_url": "https://api.github.com/repos/react-native-community/upgrade-helper/assignees{/user}",
-  "branches_url": "https://api.github.com/repos/react-native-community/upgrade-helper/branches{/branch}",
-  "tags_url": "https://api.github.com/repos/react-native-community/upgrade-helper/tags",
-  "blobs_url": "https://api.github.com/repos/react-native-community/upgrade-helper/git/blobs{/sha}",
-  "git_tags_url": "https://api.github.com/repos/react-native-community/upgrade-helper/git/tags{/sha}",
-  "git_refs_url": "https://api.github.com/repos/react-native-community/upgrade-helper/git/refs{/sha}",
-  "trees_url": "https://api.github.com/repos/react-native-community/upgrade-helper/git/trees{/sha}",
-  "statuses_url": "https://api.github.com/repos/react-native-community/upgrade-helper/statuses/{sha}",
-  "languages_url": "https://api.github.com/repos/react-native-community/upgrade-helper/languages",
-  "stargazers_url": "https://api.github.com/repos/react-native-community/upgrade-helper/stargazers",
-  "contributors_url": "https://api.github.com/repos/react-native-community/upgrade-helper/contributors",
-  "subscribers_url": "https://api.github.com/repos/react-native-community/upgrade-helper/subscribers",
-  "subscription_url": "https://api.github.com/repos/react-native-community/upgrade-helper/subscription",
-  "commits_url": "https://api.github.com/repos/react-native-community/upgrade-helper/commits{/sha}",
-  "git_commits_url": "https://api.github.com/repos/react-native-community/upgrade-helper/git/commits{/sha}",
-  "comments_url": "https://api.github.com/repos/react-native-community/upgrade-helper/comments{/number}",
-  "issue_comment_url": "https://api.github.com/repos/react-native-community/upgrade-helper/issues/comments{/number}",
-  "contents_url": "https://api.github.com/repos/react-native-community/upgrade-helper/contents/{+path}",
-  "compare_url": "https://api.github.com/repos/react-native-community/upgrade-helper/compare/{base}...{head}",
-  "merges_url": "https://api.github.com/repos/react-native-community/upgrade-helper/merges",
-  "archive_url": "https://api.github.com/repos/react-native-community/upgrade-helper/{archive_format}{/ref}",
-  "downloads_url": "https://api.github.com/repos/react-native-community/upgrade-helper/downloads",
-  "issues_url": "https://api.github.com/repos/react-native-community/upgrade-helper/issues{/number}",
-  "pulls_url": "https://api.github.com/repos/react-native-community/upgrade-helper/pulls{/number}",
-  "milestones_url": "https://api.github.com/repos/react-native-community/upgrade-helper/milestones{/number}",
-  "notifications_url": "https://api.github.com/repos/react-native-community/upgrade-helper/notifications{?since,all,participating}",
-  "labels_url": "https://api.github.com/repos/react-native-community/upgrade-helper/labels{/name}",
-  "releases_url": "https://api.github.com/repos/react-native-community/upgrade-helper/releases{/id}",
-  "deployments_url": "https://api.github.com/repos/react-native-community/upgrade-helper/deployments",
-  "created_at": "2019-03-13T19:52:36Z",
-  "updated_at": "2025-02-13T12:15:36Z",
-  "pushed_at": "2025-01-15T16:34:30Z",
-  "git_url": "git://github.com/react-native-community/upgrade-helper.git",
-  "ssh_url": "git@github.com:react-native-community/upgrade-helper.git",
-  "clone_url": "https://github.com/react-native-community/upgrade-helper.git",
-  "svn_url": "https://github.com/react-native-community/upgrade-helper",
-  "homepage": "https://react-native-community.github.io/upgrade-helper",
-  "size": 34655,
-  "stargazers_count": 3741,
-  "watchers_count": 3741,
-  "language": "TypeScript",
-  "has_issues": true,
-  "has_projects": true,
-  "has_downloads": true,
-  "has_wiki": false,
-  "has_pages": true,
-  "has_discussions": false,
-  "forks_count": 119,
-  "mirror_url": null,
-  "archived": false,
-  "disabled": false,
-  "open_issues_count": 36,
-  "license": {
-    "key": "mit",
-    "name": "MIT License",
-    "spdx_id": "MIT",
-    "url": "https://api.github.com/licenses/mit",
-    "node_id": "MDc6TGljZW5zZTEz"
+  html_url: "https://github.com/react-native-community/upgrade-helper",
+  description:
+    "⚛️ A web tool to support React Native developers in upgrading their apps.",
+  fork: false,
+  url: "https://api.github.com/repos/react-native-community/upgrade-helper",
+  forks_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/forks",
+  keys_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/keys{/key_id}",
+  collaborators_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/collaborators{/collaborator}",
+  teams_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/teams",
+  hooks_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/hooks",
+  issue_events_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/issues/events{/number}",
+  events_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/events",
+  assignees_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/assignees{/user}",
+  branches_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/branches{/branch}",
+  tags_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/tags",
+  blobs_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/git/blobs{/sha}",
+  git_tags_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/git/tags{/sha}",
+  git_refs_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/git/refs{/sha}",
+  trees_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/git/trees{/sha}",
+  statuses_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/statuses/{sha}",
+  languages_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/languages",
+  stargazers_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/stargazers",
+  contributors_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/contributors",
+  subscribers_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/subscribers",
+  subscription_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/subscription",
+  commits_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/commits{/sha}",
+  git_commits_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/git/commits{/sha}",
+  comments_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/comments{/number}",
+  issue_comment_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/issues/comments{/number}",
+  contents_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/contents/{+path}",
+  compare_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/compare/{base}...{head}",
+  merges_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/merges",
+  archive_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/{archive_format}{/ref}",
+  downloads_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/downloads",
+  issues_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/issues{/number}",
+  pulls_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/pulls{/number}",
+  milestones_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/milestones{/number}",
+  notifications_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/notifications{?since,all,participating}",
+  labels_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/labels{/name}",
+  releases_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/releases{/id}",
+  deployments_url:
+    "https://api.github.com/repos/react-native-community/upgrade-helper/deployments",
+  created_at: "2019-03-13T19:52:36Z",
+  updated_at: "2025-02-13T12:15:36Z",
+  pushed_at: "2025-01-15T16:34:30Z",
+  git_url: "git://github.com/react-native-community/upgrade-helper.git",
+  ssh_url: "git@github.com:react-native-community/upgrade-helper.git",
+  clone_url: "https://github.com/react-native-community/upgrade-helper.git",
+  svn_url: "https://github.com/react-native-community/upgrade-helper",
+  homepage: "https://react-native-community.github.io/upgrade-helper",
+  size: 34655,
+  stargazers_count: 3741,
+  watchers_count: 3741,
+  language: "TypeScript",
+  has_issues: true,
+  has_projects: true,
+  has_downloads: true,
+  has_wiki: false,
+  has_pages: true,
+  has_discussions: false,
+  forks_count: 119,
+  mirror_url: null,
+  archived: false,
+  disabled: false,
+  open_issues_count: 36,
+  license: {
+    key: "mit",
+    name: "MIT License",
+    spdx_id: "MIT",
+    url: "https://api.github.com/licenses/mit",
+    node_id: "MDc6TGljZW5zZTEz",
   },
-  "allow_forking": true,
-  "is_template": true,
-  "web_commit_signoff_required": false,
-  "topics": [
-    "react",
-    "react-native",
-    "rn-diff",
-    "rn-diff-purge",
-    "upgrade-tool"
-  ],
-  "visibility": "public",
-  "forks": 119,
-  "open_issues": 36,
-  "watchers": 3741,
-  "default_branch": "master",
-  "temp_clone_token": null,
-  "custom_properties": {
-
+  allow_forking: true,
+  is_template: true,
+  web_commit_signoff_required: false,
+  topics: ["react", "react-native", "rn-diff", "rn-diff-purge", "upgrade-tool"],
+  visibility: "public",
+  forks: 119,
+  open_issues: 36,
+  watchers: 3741,
+  default_branch: "master",
+  temp_clone_token: null,
+  custom_properties: {},
+  organization: {
+    login: "react-native-community",
+    id: 20269980,
+    node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+    avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+    gravatar_id: "",
+    url: "https://api.github.com/users/react-native-community",
+    html_url: "https://github.com/react-native-community",
+    followers_url:
+      "https://api.github.com/users/react-native-community/followers",
+    following_url:
+      "https://api.github.com/users/react-native-community/following{/other_user}",
+    gists_url:
+      "https://api.github.com/users/react-native-community/gists{/gist_id}",
+    starred_url:
+      "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+    subscriptions_url:
+      "https://api.github.com/users/react-native-community/subscriptions",
+    organizations_url:
+      "https://api.github.com/users/react-native-community/orgs",
+    repos_url: "https://api.github.com/users/react-native-community/repos",
+    events_url:
+      "https://api.github.com/users/react-native-community/events{/privacy}",
+    received_events_url:
+      "https://api.github.com/users/react-native-community/received_events",
+    type: "Organization",
+    user_view_type: "public",
+    site_admin: false,
   },
-  "organization": {
-    "login": "react-native-community",
-    "id": 20269980,
-    "node_id": "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
-    "avatar_url": "https://avatars.githubusercontent.com/u/20269980?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/react-native-community",
-    "html_url": "https://github.com/react-native-community",
-    "followers_url": "https://api.github.com/users/react-native-community/followers",
-    "following_url": "https://api.github.com/users/react-native-community/following{/other_user}",
-    "gists_url": "https://api.github.com/users/react-native-community/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/react-native-community/subscriptions",
-    "organizations_url": "https://api.github.com/users/react-native-community/orgs",
-    "repos_url": "https://api.github.com/users/react-native-community/repos",
-    "events_url": "https://api.github.com/users/react-native-community/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/react-native-community/received_events",
-    "type": "Organization",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  "network_count": 119,
-  "subscribers_count": 26
+  network_count: 119,
+  subscribers_count: 26,
 };
 
 export const dummySearch = ["boo", "boost", "javascriptcore", "zz", "template"];
+
+export const dummySearchResult = {
+  items: [
+    {
+      id: 118251766,
+      node_id: "MDEwOlJlcG9zaXRvcnkxMTgyNTE3NjY=",
+      name: "releases",
+      full_name: "react-native-community/releases",
+      private: false,
+      owner: {
+        login: "react-native-community",
+        id: 20269980,
+        node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+        avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+        gravatar_id: "",
+        url: "https://api.github.com/users/react-native-community",
+        html_url: "https://github.com/react-native-community",
+        followers_url:
+          "https://api.github.com/users/react-native-community/followers",
+        following_url:
+          "https://api.github.com/users/react-native-community/following{/other_user}",
+        gists_url:
+          "https://api.github.com/users/react-native-community/gists{/gist_id}",
+        starred_url:
+          "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+        subscriptions_url:
+          "https://api.github.com/users/react-native-community/subscriptions",
+        organizations_url:
+          "https://api.github.com/users/react-native-community/orgs",
+        repos_url: "https://api.github.com/users/react-native-community/repos",
+        events_url:
+          "https://api.github.com/users/react-native-community/events{/privacy}",
+        received_events_url:
+          "https://api.github.com/users/react-native-community/received_events",
+        type: "Organization",
+        user_view_type: "public",
+        site_admin: false,
+      },
+      html_url: "https://github.com/react-native-community/releases",
+      description: "React Native releases",
+      fork: false,
+      url: "https://api.github.com/repos/react-native-community/releases",
+      forks_url:
+        "https://api.github.com/repos/react-native-community/releases/forks",
+      keys_url:
+        "https://api.github.com/repos/react-native-community/releases/keys{/key_id}",
+      collaborators_url:
+        "https://api.github.com/repos/react-native-community/releases/collaborators{/collaborator}",
+      teams_url:
+        "https://api.github.com/repos/react-native-community/releases/teams",
+      hooks_url:
+        "https://api.github.com/repos/react-native-community/releases/hooks",
+      issue_events_url:
+        "https://api.github.com/repos/react-native-community/releases/issues/events{/number}",
+      events_url:
+        "https://api.github.com/repos/react-native-community/releases/events",
+      assignees_url:
+        "https://api.github.com/repos/react-native-community/releases/assignees{/user}",
+      branches_url:
+        "https://api.github.com/repos/react-native-community/releases/branches{/branch}",
+      tags_url:
+        "https://api.github.com/repos/react-native-community/releases/tags",
+      blobs_url:
+        "https://api.github.com/repos/react-native-community/releases/git/blobs{/sha}",
+      git_tags_url:
+        "https://api.github.com/repos/react-native-community/releases/git/tags{/sha}",
+      git_refs_url:
+        "https://api.github.com/repos/react-native-community/releases/git/refs{/sha}",
+      trees_url:
+        "https://api.github.com/repos/react-native-community/releases/git/trees{/sha}",
+      statuses_url:
+        "https://api.github.com/repos/react-native-community/releases/statuses/{sha}",
+      languages_url:
+        "https://api.github.com/repos/react-native-community/releases/languages",
+      stargazers_url:
+        "https://api.github.com/repos/react-native-community/releases/stargazers",
+      contributors_url:
+        "https://api.github.com/repos/react-native-community/releases/contributors",
+      subscribers_url:
+        "https://api.github.com/repos/react-native-community/releases/subscribers",
+      subscription_url:
+        "https://api.github.com/repos/react-native-community/releases/subscription",
+      commits_url:
+        "https://api.github.com/repos/react-native-community/releases/commits{/sha}",
+      git_commits_url:
+        "https://api.github.com/repos/react-native-community/releases/git/commits{/sha}",
+      comments_url:
+        "https://api.github.com/repos/react-native-community/releases/comments{/number}",
+      issue_comment_url:
+        "https://api.github.com/repos/react-native-community/releases/issues/comments{/number}",
+      contents_url:
+        "https://api.github.com/repos/react-native-community/releases/contents/{+path}",
+      compare_url:
+        "https://api.github.com/repos/react-native-community/releases/compare/{base}...{head}",
+      merges_url:
+        "https://api.github.com/repos/react-native-community/releases/merges",
+      archive_url:
+        "https://api.github.com/repos/react-native-community/releases/{archive_format}{/ref}",
+      downloads_url:
+        "https://api.github.com/repos/react-native-community/releases/downloads",
+      issues_url:
+        "https://api.github.com/repos/react-native-community/releases/issues{/number}",
+      pulls_url:
+        "https://api.github.com/repos/react-native-community/releases/pulls{/number}",
+      milestones_url:
+        "https://api.github.com/repos/react-native-community/releases/milestones{/number}",
+      notifications_url:
+        "https://api.github.com/repos/react-native-community/releases/notifications{?since,all,participating}",
+      labels_url:
+        "https://api.github.com/repos/react-native-community/releases/labels{/name}",
+      releases_url:
+        "https://api.github.com/repos/react-native-community/releases/releases{/id}",
+      deployments_url:
+        "https://api.github.com/repos/react-native-community/releases/deployments",
+      created_at: "2018-01-20T14:49:59Z",
+      updated_at: "2025-02-11T05:23:05Z",
+      pushed_at: "2022-06-17T11:11:24Z",
+      git_url: "git://github.com/react-native-community/releases.git",
+      ssh_url: "git@github.com:react-native-community/releases.git",
+      clone_url: "https://github.com/react-native-community/releases.git",
+      svn_url: "https://github.com/react-native-community/releases",
+      homepage: "https://github.com/facebook/react-native/",
+      size: 1614,
+      stargazers_count: 1501,
+      watchers_count: 1501,
+      language: "JavaScript",
+      has_issues: true,
+      has_projects: false,
+      has_downloads: true,
+      has_wiki: false,
+      has_pages: false,
+      has_discussions: false,
+      forks_count: 404,
+      mirror_url: null,
+      archived: true,
+      disabled: false,
+      open_issues_count: 3,
+      license: null,
+      allow_forking: true,
+      is_template: false,
+      web_commit_signoff_required: false,
+      topics: ["changelog", "react-native", "react-native-releases"],
+      visibility: "public",
+      forks: 404,
+      open_issues: 3,
+      watchers: 1501,
+      default_branch: "master",
+      score: 1.0,
+    },
+    {
+      id: 123966596,
+      node_id: "MDEwOlJlcG9zaXRvcnkxMjM5NjY1OTY=",
+      name: "react-native-template-typescript",
+      full_name: "react-native-community/react-native-template-typescript",
+      private: false,
+      owner: {
+        login: "react-native-community",
+        id: 20269980,
+        node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+        avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+        gravatar_id: "",
+        url: "https://api.github.com/users/react-native-community",
+        html_url: "https://github.com/react-native-community",
+        followers_url:
+          "https://api.github.com/users/react-native-community/followers",
+        following_url:
+          "https://api.github.com/users/react-native-community/following{/other_user}",
+        gists_url:
+          "https://api.github.com/users/react-native-community/gists{/gist_id}",
+        starred_url:
+          "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+        subscriptions_url:
+          "https://api.github.com/users/react-native-community/subscriptions",
+        organizations_url:
+          "https://api.github.com/users/react-native-community/orgs",
+        repos_url: "https://api.github.com/users/react-native-community/repos",
+        events_url:
+          "https://api.github.com/users/react-native-community/events{/privacy}",
+        received_events_url:
+          "https://api.github.com/users/react-native-community/received_events",
+        type: "Organization",
+        user_view_type: "public",
+        site_admin: false,
+      },
+      html_url:
+        "https://github.com/react-native-community/react-native-template-typescript",
+      description:
+        "👾 Clean and minimalist React Native template for a quick start with TypeScript.",
+      fork: false,
+      url: "https://api.github.com/repos/react-native-community/react-native-template-typescript",
+      forks_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/forks",
+      keys_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/keys{/key_id}",
+      collaborators_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/collaborators{/collaborator}",
+      teams_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/teams",
+      hooks_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/hooks",
+      issue_events_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/issues/events{/number}",
+      events_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/events",
+      assignees_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/assignees{/user}",
+      branches_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/branches{/branch}",
+      tags_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/tags",
+      blobs_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/git/blobs{/sha}",
+      git_tags_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/git/tags{/sha}",
+      git_refs_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/git/refs{/sha}",
+      trees_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/git/trees{/sha}",
+      statuses_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/statuses/{sha}",
+      languages_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/languages",
+      stargazers_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/stargazers",
+      contributors_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/contributors",
+      subscribers_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/subscribers",
+      subscription_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/subscription",
+      commits_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/commits{/sha}",
+      git_commits_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/git/commits{/sha}",
+      comments_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/comments{/number}",
+      issue_comment_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/issues/comments{/number}",
+      contents_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/contents/{+path}",
+      compare_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/compare/{base}...{head}",
+      merges_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/merges",
+      archive_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/{archive_format}{/ref}",
+      downloads_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/downloads",
+      issues_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/issues{/number}",
+      pulls_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/pulls{/number}",
+      milestones_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/milestones{/number}",
+      notifications_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/notifications{?since,all,participating}",
+      labels_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/labels{/name}",
+      releases_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/releases{/id}",
+      deployments_url:
+        "https://api.github.com/repos/react-native-community/react-native-template-typescript/deployments",
+      created_at: "2018-03-05T19:15:51Z",
+      updated_at: "2025-02-14T15:17:27Z",
+      pushed_at: "2023-06-26T15:22:36Z",
+      git_url:
+        "git://github.com/react-native-community/react-native-template-typescript.git",
+      ssh_url:
+        "git@github.com:react-native-community/react-native-template-typescript.git",
+      clone_url:
+        "https://github.com/react-native-community/react-native-template-typescript.git",
+      svn_url:
+        "https://github.com/react-native-community/react-native-template-typescript",
+      homepage:
+        "https://www.npmjs.com/package/react-native-template-typescript",
+      size: 545,
+      stargazers_count: 1870,
+      watchers_count: 1870,
+      language: "Java",
+      has_issues: true,
+      has_projects: false,
+      has_downloads: true,
+      has_wiki: false,
+      has_pages: false,
+      has_discussions: false,
+      forks_count: 396,
+      mirror_url: null,
+      archived: false,
+      disabled: false,
+      open_issues_count: 10,
+      license: {
+        key: "mit",
+        name: "MIT License",
+        spdx_id: "MIT",
+        url: "https://api.github.com/licenses/mit",
+        node_id: "MDc6TGljZW5zZTEz",
+      },
+      allow_forking: true,
+      is_template: false,
+      web_commit_signoff_required: false,
+      topics: ["boilerplate", "jest", "react-native", "template", "typescript"],
+      visibility: "public",
+      forks: 396,
+      open_issues: 10,
+      watchers: 1870,
+      default_branch: "main",
+      score: 1.0,
+    },
+    {
+      id: 173779870,
+      node_id: "MDEwOlJlcG9zaXRvcnkxNzM3Nzk4NzA=",
+      name: "react-native-circleci-orb",
+      full_name: "react-native-community/react-native-circleci-orb",
+      private: false,
+      owner: {
+        login: "react-native-community",
+        id: 20269980,
+        node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+        avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+        gravatar_id: "",
+        url: "https://api.github.com/users/react-native-community",
+        html_url: "https://github.com/react-native-community",
+        followers_url:
+          "https://api.github.com/users/react-native-community/followers",
+        following_url:
+          "https://api.github.com/users/react-native-community/following{/other_user}",
+        gists_url:
+          "https://api.github.com/users/react-native-community/gists{/gist_id}",
+        starred_url:
+          "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+        subscriptions_url:
+          "https://api.github.com/users/react-native-community/subscriptions",
+        organizations_url:
+          "https://api.github.com/users/react-native-community/orgs",
+        repos_url: "https://api.github.com/users/react-native-community/repos",
+        events_url:
+          "https://api.github.com/users/react-native-community/events{/privacy}",
+        received_events_url:
+          "https://api.github.com/users/react-native-community/received_events",
+        type: "Organization",
+        user_view_type: "public",
+        site_admin: false,
+      },
+      html_url:
+        "https://github.com/react-native-community/react-native-circleci-orb",
+      description: "A CircleCI Orb to Simplify Testing your React Native App",
+      fork: false,
+      url: "https://api.github.com/repos/react-native-community/react-native-circleci-orb",
+      forks_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/forks",
+      keys_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/keys{/key_id}",
+      collaborators_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/collaborators{/collaborator}",
+      teams_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/teams",
+      hooks_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/hooks",
+      issue_events_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/issues/events{/number}",
+      events_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/events",
+      assignees_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/assignees{/user}",
+      branches_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/branches{/branch}",
+      tags_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/tags",
+      blobs_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/git/blobs{/sha}",
+      git_tags_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/git/tags{/sha}",
+      git_refs_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/git/refs{/sha}",
+      trees_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/git/trees{/sha}",
+      statuses_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/statuses/{sha}",
+      languages_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/languages",
+      stargazers_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/stargazers",
+      contributors_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/contributors",
+      subscribers_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/subscribers",
+      subscription_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/subscription",
+      commits_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/commits{/sha}",
+      git_commits_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/git/commits{/sha}",
+      comments_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/comments{/number}",
+      issue_comment_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/issues/comments{/number}",
+      contents_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/contents/{+path}",
+      compare_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/compare/{base}...{head}",
+      merges_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/merges",
+      archive_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/{archive_format}{/ref}",
+      downloads_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/downloads",
+      issues_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/issues{/number}",
+      pulls_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/pulls{/number}",
+      milestones_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/milestones{/number}",
+      notifications_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/notifications{?since,all,participating}",
+      labels_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/labels{/name}",
+      releases_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/releases{/id}",
+      deployments_url:
+        "https://api.github.com/repos/react-native-community/react-native-circleci-orb/deployments",
+      created_at: "2019-03-04T16:21:42Z",
+      updated_at: "2024-12-29T11:41:52Z",
+      pushed_at: "2024-12-29T11:41:50Z",
+      git_url:
+        "git://github.com/react-native-community/react-native-circleci-orb.git",
+      ssh_url:
+        "git@github.com:react-native-community/react-native-circleci-orb.git",
+      clone_url:
+        "https://github.com/react-native-community/react-native-circleci-orb.git",
+      svn_url:
+        "https://github.com/react-native-community/react-native-circleci-orb",
+      homepage: "",
+      size: 882,
+      stargazers_count: 178,
+      watchers_count: 178,
+      language: null,
+      has_issues: true,
+      has_projects: false,
+      has_downloads: true,
+      has_wiki: false,
+      has_pages: false,
+      has_discussions: false,
+      forks_count: 80,
+      mirror_url: null,
+      archived: false,
+      disabled: false,
+      open_issues_count: 14,
+      license: {
+        key: "mit",
+        name: "MIT License",
+        spdx_id: "MIT",
+        url: "https://api.github.com/licenses/mit",
+        node_id: "MDc6TGljZW5zZTEz",
+      },
+      allow_forking: true,
+      is_template: false,
+      web_commit_signoff_required: false,
+      topics: [
+        "android",
+        "circleci",
+        "circleci-orbs",
+        "detox",
+        "integration-testing",
+        "ios",
+        "react-native",
+        "testing",
+      ],
+      visibility: "public",
+      forks: 80,
+      open_issues: 14,
+      watchers: 178,
+      default_branch: "main",
+      score: 1.0,
+    },
+    {
+      id: 76593330,
+      node_id: "MDEwOlJlcG9zaXRvcnk3NjU5MzMzMA==",
+      name: "boost-for-react-native",
+      full_name: "react-native-community/boost-for-react-native",
+      private: false,
+      owner: {
+        login: "react-native-community",
+        id: 20269980,
+        node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+        avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+        gravatar_id: "",
+        url: "https://api.github.com/users/react-native-community",
+        html_url: "https://github.com/react-native-community",
+        followers_url:
+          "https://api.github.com/users/react-native-community/followers",
+        following_url:
+          "https://api.github.com/users/react-native-community/following{/other_user}",
+        gists_url:
+          "https://api.github.com/users/react-native-community/gists{/gist_id}",
+        starred_url:
+          "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+        subscriptions_url:
+          "https://api.github.com/users/react-native-community/subscriptions",
+        organizations_url:
+          "https://api.github.com/users/react-native-community/orgs",
+        repos_url: "https://api.github.com/users/react-native-community/repos",
+        events_url:
+          "https://api.github.com/users/react-native-community/events{/privacy}",
+        received_events_url:
+          "https://api.github.com/users/react-native-community/received_events",
+        type: "Organization",
+        user_view_type: "public",
+        site_admin: false,
+      },
+      html_url:
+        "https://github.com/react-native-community/boost-for-react-native",
+      description:
+        "The Boost C++ library source code used to build React Native from source",
+      fork: false,
+      url: "https://api.github.com/repos/react-native-community/boost-for-react-native",
+      forks_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/forks",
+      keys_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/keys{/key_id}",
+      collaborators_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/collaborators{/collaborator}",
+      teams_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/teams",
+      hooks_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/hooks",
+      issue_events_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/issues/events{/number}",
+      events_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/events",
+      assignees_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/assignees{/user}",
+      branches_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/branches{/branch}",
+      tags_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/tags",
+      blobs_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/git/blobs{/sha}",
+      git_tags_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/git/tags{/sha}",
+      git_refs_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/git/refs{/sha}",
+      trees_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/git/trees{/sha}",
+      statuses_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/statuses/{sha}",
+      languages_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/languages",
+      stargazers_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/stargazers",
+      contributors_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/contributors",
+      subscribers_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/subscribers",
+      subscription_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/subscription",
+      commits_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/commits{/sha}",
+      git_commits_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/git/commits{/sha}",
+      comments_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/comments{/number}",
+      issue_comment_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/issues/comments{/number}",
+      contents_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/contents/{+path}",
+      compare_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/compare/{base}...{head}",
+      merges_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/merges",
+      archive_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/{archive_format}{/ref}",
+      downloads_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/downloads",
+      issues_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/issues{/number}",
+      pulls_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/pulls{/number}",
+      milestones_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/milestones{/number}",
+      notifications_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/notifications{?since,all,participating}",
+      labels_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/labels{/name}",
+      releases_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/releases{/id}",
+      deployments_url:
+        "https://api.github.com/repos/react-native-community/boost-for-react-native/deployments",
+      created_at: "2016-12-15T20:23:18Z",
+      updated_at: "2024-12-06T23:43:03Z",
+      pushed_at: "2024-06-05T08:16:39Z",
+      git_url:
+        "git://github.com/react-native-community/boost-for-react-native.git",
+      ssh_url:
+        "git@github.com:react-native-community/boost-for-react-native.git",
+      clone_url:
+        "https://github.com/react-native-community/boost-for-react-native.git",
+      svn_url:
+        "https://github.com/react-native-community/boost-for-react-native",
+      homepage: null,
+      size: 19047,
+      stargazers_count: 85,
+      watchers_count: 85,
+      language: "C++",
+      has_issues: true,
+      has_projects: true,
+      has_downloads: true,
+      has_wiki: false,
+      has_pages: false,
+      has_discussions: false,
+      forks_count: 56,
+      mirror_url: null,
+      archived: false,
+      disabled: false,
+      open_issues_count: 6,
+      license: {
+        key: "bsl-1.0",
+        name: "Boost Software License 1.0",
+        spdx_id: "BSL-1.0",
+        url: "https://api.github.com/licenses/bsl-1.0",
+        node_id: "MDc6TGljZW5zZTI4",
+      },
+      allow_forking: true,
+      is_template: false,
+      web_commit_signoff_required: false,
+      topics: [],
+      visibility: "public",
+      forks: 56,
+      open_issues: 6,
+      watchers: 85,
+      default_branch: "main",
+      score: 1.0,
+    },
+    {
+      id: 602932464,
+      node_id: "R_kgDOI_AE8A",
+      name: "reproducer-react-native",
+      full_name: "react-native-community/reproducer-react-native",
+      private: false,
+      owner: {
+        login: "react-native-community",
+        id: 20269980,
+        node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+        avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+        gravatar_id: "",
+        url: "https://api.github.com/users/react-native-community",
+        html_url: "https://github.com/react-native-community",
+        followers_url:
+          "https://api.github.com/users/react-native-community/followers",
+        following_url:
+          "https://api.github.com/users/react-native-community/following{/other_user}",
+        gists_url:
+          "https://api.github.com/users/react-native-community/gists{/gist_id}",
+        starred_url:
+          "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+        subscriptions_url:
+          "https://api.github.com/users/react-native-community/subscriptions",
+        organizations_url:
+          "https://api.github.com/users/react-native-community/orgs",
+        repos_url: "https://api.github.com/users/react-native-community/repos",
+        events_url:
+          "https://api.github.com/users/react-native-community/events{/privacy}",
+        received_events_url:
+          "https://api.github.com/users/react-native-community/received_events",
+        type: "Organization",
+        user_view_type: "public",
+        site_admin: false,
+      },
+      html_url:
+        "https://github.com/react-native-community/reproducer-react-native",
+      description:
+        "A reproducer to easily recreate bugs and report problems for React Native",
+      fork: false,
+      url: "https://api.github.com/repos/react-native-community/reproducer-react-native",
+      forks_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/forks",
+      keys_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/keys{/key_id}",
+      collaborators_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/collaborators{/collaborator}",
+      teams_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/teams",
+      hooks_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/hooks",
+      issue_events_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/issues/events{/number}",
+      events_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/events",
+      assignees_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/assignees{/user}",
+      branches_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/branches{/branch}",
+      tags_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/tags",
+      blobs_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/git/blobs{/sha}",
+      git_tags_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/git/tags{/sha}",
+      git_refs_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/git/refs{/sha}",
+      trees_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/git/trees{/sha}",
+      statuses_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/statuses/{sha}",
+      languages_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/languages",
+      stargazers_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/stargazers",
+      contributors_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/contributors",
+      subscribers_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/subscribers",
+      subscription_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/subscription",
+      commits_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/commits{/sha}",
+      git_commits_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/git/commits{/sha}",
+      comments_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/comments{/number}",
+      issue_comment_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/issues/comments{/number}",
+      contents_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/contents/{+path}",
+      compare_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/compare/{base}...{head}",
+      merges_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/merges",
+      archive_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/{archive_format}{/ref}",
+      downloads_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/downloads",
+      issues_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/issues{/number}",
+      pulls_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/pulls{/number}",
+      milestones_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/milestones{/number}",
+      notifications_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/notifications{?since,all,participating}",
+      labels_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/labels{/name}",
+      releases_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/releases{/id}",
+      deployments_url:
+        "https://api.github.com/repos/react-native-community/reproducer-react-native/deployments",
+      created_at: "2023-02-17T08:56:24Z",
+      updated_at: "2025-02-14T00:44:26Z",
+      pushed_at: "2025-02-14T00:44:23Z",
+      git_url:
+        "git://github.com/react-native-community/reproducer-react-native.git",
+      ssh_url:
+        "git@github.com:react-native-community/reproducer-react-native.git",
+      clone_url:
+        "https://github.com/react-native-community/reproducer-react-native.git",
+      svn_url:
+        "https://github.com/react-native-community/reproducer-react-native",
+      homepage: "",
+      size: 3588,
+      stargazers_count: 52,
+      watchers_count: 52,
+      language: "TypeScript",
+      has_issues: true,
+      has_projects: false,
+      has_downloads: true,
+      has_wiki: true,
+      has_pages: false,
+      has_discussions: false,
+      forks_count: 16,
+      mirror_url: null,
+      archived: false,
+      disabled: false,
+      open_issues_count: 0,
+      license: {
+        key: "mit",
+        name: "MIT License",
+        spdx_id: "MIT",
+        url: "https://api.github.com/licenses/mit",
+        node_id: "MDc6TGljZW5zZTEz",
+      },
+      allow_forking: true,
+      is_template: true,
+      web_commit_signoff_required: false,
+      topics: ["react-native", "reproducer"],
+      visibility: "public",
+      forks: 16,
+      open_issues: 0,
+      watchers: 52,
+      default_branch: "main",
+      score: 1.0,
+    },
+    {
+      id: 109403881,
+      node_id: "MDEwOlJlcG9zaXRvcnkxMDk0MDM4ODE=",
+      name: "eslint-plugin-react-native-globals",
+      full_name: "react-native-community/eslint-plugin-react-native-globals",
+      private: false,
+      owner: {
+        login: "react-native-community",
+        id: 20269980,
+        node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+        avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+        gravatar_id: "",
+        url: "https://api.github.com/users/react-native-community",
+        html_url: "https://github.com/react-native-community",
+        followers_url:
+          "https://api.github.com/users/react-native-community/followers",
+        following_url:
+          "https://api.github.com/users/react-native-community/following{/other_user}",
+        gists_url:
+          "https://api.github.com/users/react-native-community/gists{/gist_id}",
+        starred_url:
+          "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+        subscriptions_url:
+          "https://api.github.com/users/react-native-community/subscriptions",
+        organizations_url:
+          "https://api.github.com/users/react-native-community/orgs",
+        repos_url: "https://api.github.com/users/react-native-community/repos",
+        events_url:
+          "https://api.github.com/users/react-native-community/events{/privacy}",
+        received_events_url:
+          "https://api.github.com/users/react-native-community/received_events",
+        type: "Organization",
+        user_view_type: "public",
+        site_admin: false,
+      },
+      html_url:
+        "https://github.com/react-native-community/eslint-plugin-react-native-globals",
+      description: "ESLint Environment for React Native",
+      fork: false,
+      url: "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals",
+      forks_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/forks",
+      keys_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/keys{/key_id}",
+      collaborators_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/collaborators{/collaborator}",
+      teams_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/teams",
+      hooks_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/hooks",
+      issue_events_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/issues/events{/number}",
+      events_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/events",
+      assignees_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/assignees{/user}",
+      branches_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/branches{/branch}",
+      tags_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/tags",
+      blobs_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/git/blobs{/sha}",
+      git_tags_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/git/tags{/sha}",
+      git_refs_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/git/refs{/sha}",
+      trees_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/git/trees{/sha}",
+      statuses_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/statuses/{sha}",
+      languages_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/languages",
+      stargazers_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/stargazers",
+      contributors_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/contributors",
+      subscribers_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/subscribers",
+      subscription_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/subscription",
+      commits_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/commits{/sha}",
+      git_commits_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/git/commits{/sha}",
+      comments_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/comments{/number}",
+      issue_comment_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/issues/comments{/number}",
+      contents_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/contents/{+path}",
+      compare_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/compare/{base}...{head}",
+      merges_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/merges",
+      archive_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/{archive_format}{/ref}",
+      downloads_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/downloads",
+      issues_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/issues{/number}",
+      pulls_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/pulls{/number}",
+      milestones_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/milestones{/number}",
+      notifications_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/notifications{?since,all,participating}",
+      labels_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/labels{/name}",
+      releases_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/releases{/id}",
+      deployments_url:
+        "https://api.github.com/repos/react-native-community/eslint-plugin-react-native-globals/deployments",
+      created_at: "2017-11-03T14:17:13Z",
+      updated_at: "2024-08-25T07:20:58Z",
+      pushed_at: "2018-09-29T20:40:48Z",
+      git_url:
+        "git://github.com/react-native-community/eslint-plugin-react-native-globals.git",
+      ssh_url:
+        "git@github.com:react-native-community/eslint-plugin-react-native-globals.git",
+      clone_url:
+        "https://github.com/react-native-community/eslint-plugin-react-native-globals.git",
+      svn_url:
+        "https://github.com/react-native-community/eslint-plugin-react-native-globals",
+      homepage: null,
+      size: 3,
+      stargazers_count: 39,
+      watchers_count: 39,
+      language: "JavaScript",
+      has_issues: true,
+      has_projects: true,
+      has_downloads: true,
+      has_wiki: true,
+      has_pages: false,
+      has_discussions: false,
+      forks_count: 9,
+      mirror_url: null,
+      archived: false,
+      disabled: false,
+      open_issues_count: 3,
+      license: null,
+      allow_forking: true,
+      is_template: false,
+      web_commit_signoff_required: false,
+      topics: [],
+      visibility: "public",
+      forks: 9,
+      open_issues: 3,
+      watchers: 39,
+      default_branch: "master",
+      score: 1.0,
+    },
+    {
+      id: 933880184,
+      node_id: "R_kgDON6nheA",
+      name: "vscode-react-native-directory",
+      full_name: "react-native-community/vscode-react-native-directory",
+      private: false,
+      owner: {
+        login: "react-native-community",
+        id: 20269980,
+        node_id: "MDEyOk9yZ2FuaXphdGlvbjIwMjY5OTgw",
+        avatar_url: "https://avatars.githubusercontent.com/u/20269980?v=4",
+        gravatar_id: "",
+        url: "https://api.github.com/users/react-native-community",
+        html_url: "https://github.com/react-native-community",
+        followers_url:
+          "https://api.github.com/users/react-native-community/followers",
+        following_url:
+          "https://api.github.com/users/react-native-community/following{/other_user}",
+        gists_url:
+          "https://api.github.com/users/react-native-community/gists{/gist_id}",
+        starred_url:
+          "https://api.github.com/users/react-native-community/starred{/owner}{/repo}",
+        subscriptions_url:
+          "https://api.github.com/users/react-native-community/subscriptions",
+        organizations_url:
+          "https://api.github.com/users/react-native-community/orgs",
+        repos_url: "https://api.github.com/users/react-native-community/repos",
+        events_url:
+          "https://api.github.com/users/react-native-community/events{/privacy}",
+        received_events_url:
+          "https://api.github.com/users/react-native-community/received_events",
+        type: "Organization",
+        user_view_type: "public",
+        site_admin: false,
+      },
+      html_url:
+        "https://github.com/react-native-community/vscode-react-native-directory",
+      description:
+        "Find and install right packages for all of your React Native apps right from your VS Code.",
+      fork: false,
+      url: "https://api.github.com/repos/react-native-community/vscode-react-native-directory",
+      forks_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/forks",
+      keys_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/keys{/key_id}",
+      collaborators_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/collaborators{/collaborator}",
+      teams_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/teams",
+      hooks_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/hooks",
+      issue_events_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/issues/events{/number}",
+      events_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/events",
+      assignees_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/assignees{/user}",
+      branches_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/branches{/branch}",
+      tags_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/tags",
+      blobs_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/git/blobs{/sha}",
+      git_tags_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/git/tags{/sha}",
+      git_refs_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/git/refs{/sha}",
+      trees_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/git/trees{/sha}",
+      statuses_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/statuses/{sha}",
+      languages_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/languages",
+      stargazers_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/stargazers",
+      contributors_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/contributors",
+      subscribers_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/subscribers",
+      subscription_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/subscription",
+      commits_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/commits{/sha}",
+      git_commits_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/git/commits{/sha}",
+      comments_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/comments{/number}",
+      issue_comment_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/issues/comments{/number}",
+      contents_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/contents/{+path}",
+      compare_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/compare/{base}...{head}",
+      merges_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/merges",
+      archive_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/{archive_format}{/ref}",
+      downloads_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/downloads",
+      issues_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/issues{/number}",
+      pulls_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/pulls{/number}",
+      milestones_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/milestones{/number}",
+      notifications_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/notifications{?since,all,participating}",
+      labels_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/labels{/name}",
+      releases_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/releases{/id}",
+      deployments_url:
+        "https://api.github.com/repos/react-native-community/vscode-react-native-directory/deployments",
+      created_at: "2025-02-16T22:13:33Z",
+      updated_at: "2025-02-16T23:22:54Z",
+      pushed_at: "2025-02-16T22:49:34Z",
+      git_url:
+        "git://github.com/react-native-community/vscode-react-native-directory.git",
+      ssh_url:
+        "git@github.com:react-native-community/vscode-react-native-directory.git",
+      clone_url:
+        "https://github.com/react-native-community/vscode-react-native-directory.git",
+      svn_url:
+        "https://github.com/react-native-community/vscode-react-native-directory",
+      homepage: "",
+      size: 348,
+      stargazers_count: 0,
+      watchers_count: 0,
+      language: "TypeScript",
+      has_issues: true,
+      has_projects: true,
+      has_downloads: true,
+      has_wiki: true,
+      has_pages: false,
+      has_discussions: false,
+      forks_count: 0,
+      mirror_url: null,
+      archived: false,
+      disabled: false,
+      open_issues_count: 0,
+      license: {
+        key: "mit",
+        name: "MIT License",
+        spdx_id: "MIT",
+        url: "https://api.github.com/licenses/mit",
+        node_id: "MDc6TGljZW5zZTEz",
+      },
+      allow_forking: true,
+      is_template: false,
+      web_commit_signoff_required: false,
+      topics: ["directory", "react-native", "vscode", "vscode-extension"],
+      visibility: "public",
+      forks: 0,
+      open_issues: 0,
+      watchers: 0,
+      default_branch: "main",
+      score: 1.0,
+    },
+  ],
+};

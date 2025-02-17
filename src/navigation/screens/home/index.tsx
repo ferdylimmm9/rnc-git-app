@@ -1,4 +1,9 @@
-import { StyleSheet, TouchableOpacity, View } from "react-native";
+import {
+  RefreshControl,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import Container from "../../../components/container";
 import { dummyInformation } from "../../../dummy";
 import CompanyCard from "./components/company-card";
@@ -7,11 +12,30 @@ import { useNavigation } from "@react-navigation/native";
 import CompanyLoadingCard from "./components/company-loading-card";
 import RepositoryList from "./components/repository-list";
 import colors from "../../../constant/color.constant";
+import useHomeData from "../../../hooks/use-home-data";
+import RepositoryListLoading from "./components/repository-list-loading";
+import React from "react";
+import Text from "../../../components/text";
 
 export function Home() {
   const { navigate } = useNavigation();
+  const {
+    handleLoadMore,
+    handleRefresh,
+    organization,
+    loadingOrganization,
+    loadingRepos,
+    refreshing,
+    repos,
+    errorOrganization,
+  } = useHomeData();
+
   return (
     <Container
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={handleRefresh} />
+      }
+      onReachBottom={handleLoadMore}
       headers={{
         mainComponent: (
           <TouchableOpacity
@@ -24,9 +48,15 @@ export function Home() {
       }}
     >
       <View style={styles.container}>
-        <CompanyLoadingCard />
-        <CompanyCard data={dummyInformation} />
-        <RepositoryList />
+        {typeof errorOrganization && (
+          <Text color="error" weight="medium" align="center">
+            {errorOrganization}
+          </Text>
+        )}
+        {loadingOrganization && <CompanyLoadingCard />}
+        {organization && <CompanyCard data={organization} />}
+        {refreshing === false && <RepositoryList data={repos} />}
+        {loadingRepos && <RepositoryListLoading />}
       </View>
     </Container>
   );

@@ -6,6 +6,7 @@ const colors = {
   border: "#3d444d",
   darkBlue: "#388bfd1a",
   lightBlue: "#4493f8",
+  error: "#CF6679",
 } as const;
 
 export type ColorVariantType = keyof typeof colors;

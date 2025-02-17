@@ -8,40 +8,43 @@ import colors from "../constant/color.constant";
 import { Detail } from "./screens/detail";
 import { RootStackParamList } from "./types";
 import ToastManager from "toastify-react-native";
+import store from "../redux/store/stores";
+import { Provider } from "react-redux";
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 export const Navigation = () => {
   return (
-    <SafeAreaProvider>
-      <ToastManager
-        positionValue={24}
-        textStyle={{
-          fontSize: 12,
-        }}
-        style={{
-          height: 48,
-        }}
-        showCloseIcon={false}
-      />
-      <NavigationContainer>
-        <RootStack.Navigator
-          initialRouteName="Home"
-          screenOptions={{
-            headerShown: false,
-            navigationBarColor: colors.brand,
+    <Provider store={store}>
+      <SafeAreaProvider>
+        <ToastManager
+          positionValue={24}
+          height="auto"
+          width="auto"
+          textStyle={{
+            fontSize: 12,
           }}
-        >
-          <RootStack.Screen name="Home" component={Home} />
-          <RootStack.Screen
-            name="Search"
-            component={Search}
-            options={{ animation: "none" }}
-          />
-          <RootStack.Screen name="Detail" component={Detail} />
-          <RootStack.Screen name="NotFound" component={NotFound} />
-        </RootStack.Navigator>
-      </NavigationContainer>
-    </SafeAreaProvider>
+          showCloseIcon={false}
+        />
+        <NavigationContainer>
+          <RootStack.Navigator
+            initialRouteName="Home"
+            screenOptions={{
+              headerShown: false,
+              navigationBarColor: colors.brand,
+            }}
+          >
+            <RootStack.Screen name="Home" component={Home} />
+            <RootStack.Screen
+              name="Search"
+              component={Search}
+              options={{ animation: "none" }}
+            />
+            <RootStack.Screen name="Detail" component={Detail} />
+            <RootStack.Screen name="NotFound" component={NotFound} />
+          </RootStack.Navigator>
+        </NavigationContainer>
+      </SafeAreaProvider>
+    </Provider>
   );
 };

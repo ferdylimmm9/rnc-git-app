@@ -2,11 +2,25 @@ import { FlashList } from "@shopify/flash-list";
 import { dummyList } from "../../../../dummy";
 import { Dimensions } from "react-native";
 import RepositoryCard from "./repository-card";
+import { RepositoryType } from "../../../../types/model.type";
+import Text from "../../../../components/text";
 
-export default function RepositoryList() {
+interface RepositoryListProps {
+  data: RepositoryType[];
+}
+
+export default function RepositoryList(props: RepositoryListProps) {
+  if (props.data.length <= 0) {
+    return (
+      <Text align="center" color="lightGray" size="large">
+        Repository is empty
+      </Text>
+    );
+  }
+
   return (
     <FlashList
-      data={dummyList}
+      data={props.data}
       estimatedItemSize={5}
       estimatedListSize={{
         height: 100,

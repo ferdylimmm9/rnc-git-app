@@ -1,21 +1,33 @@
-import { Dimensions, StyleSheet, TouchableOpacity, View } from "react-native";
+import { RefreshControl, StyleSheet, View } from "react-native";
 import Container from "../../../components/container";
 import React from "react";
 import TextInput from "../../../components/text-input";
-import { FlashList } from "@shopify/flash-list";
-import { dummyList } from "../../../dummy";
-import { X } from "phosphor-react-native";
-import colors from "../../../constant/color.constant";
 import Text from "../../../components/text";
 import useSearchRepositories from "../../../hooks/use-search-repositories";
-import Image from "../../../components/image";
-import { useNavigation } from "@react-navigation/native";
+import SearchList from "./components/search-list";
+import SearchListLoading from "./components/search-list-loading";
 
 export function Search() {
-  const { navigate } = useNavigation();
-  const { search, onChange, onSubmitEditing } = useSearchRepositories();
+  const {
+    search,
+    items,
+    recent,
+    onChange,
+    onSubmitEditing,
+    onRemoveItem,
+    onTapItem,
+    onRefresh,
+    loadingSearch,
+    refreshingSearch,
+  } = useSearchRepositories();
+  const isSearchEmpty = search === "";
   return (
     <Container
+      refreshControl={
+        onRefresh ? (
+          <RefreshControl refreshing={refreshingSearch} onRefresh={onRefresh} />
+        ) : undefined
+      }
       headers={{
         back: true,
         mainComponent: (
@@ -30,52 +42,20 @@ export function Search() {
       }}
     >
       <View style={styles.container}>
-        <Text color="white" weight="bold">
-          Recent
-        </Text>
-        <FlashList
-          estimatedListSize={{
-            height: 38,
-            width: Dimensions.get("screen").width,
-          }}
-          data={dummyList}
-          estimatedItemSize={10}
-          renderItem={({ item }) => {
-            return (
-              <TouchableOpacity
-                onPress={(e) => {
-                  e.stopPropagation();
-                  navigate("Detail", { name: item.name });
-                }}
-              >
-                <View style={styles.between}>
-                  <Image
-                    width={32}
-                    height={32}
-                    source={item.owner.avatar_url}
-                  />
-                  <View
-                    style={{
-                      flex: 1,
-                    }}
-                  >
-                    <Text weight="bold">{item.name}</Text>
-                    <Text color="lightGray" numberOfLines={1}>
-                      {item.description}
-                    </Text>
-                  </View>
-                  <TouchableOpacity
-                    onPress={(e) => {
-                      e.stopPropagation();
-                    }}
-                  >
-                    <X size={20} color={colors.lightGray} />
-                  </TouchableOpacity>
-                </View>
-              </TouchableOpacity>
-            );
-          }}
-        />
+        {isSearchEmpty && (
+          <Text color="white" weight="bold">
+            Recent
+          </Text>
+        )}
+        {loadingSearch && <SearchListLoading />}
+        {loadingSearch === false && (
+          <SearchList
+            data={isSearchEmpty ? recent : items || []}
+            type={isSearchEmpty ? "recent" : "search"}
+            onRemoveItem={onRemoveItem}
+            onTapItem={onTapItem}
+          />
+        )}
       </View>
     </Container>
   );

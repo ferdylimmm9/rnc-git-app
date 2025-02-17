@@ -5,11 +5,10 @@ import RepositoryLoadingCard from "./repository-loading-card";
 export default function RepositoryListLoading() {
   return (
     <FlashList
-      onRefresh={() => {}}
-      data={[1, 2, 3]}
+      data={[1, 2, 3, 4, 5]}
       estimatedItemSize={5}
       estimatedListSize={{
-        height: 100,
+        height: 144,
         width: Dimensions.get("screen").width,
       }}
       renderItem={({ item }) => {

@@ -8,7 +8,7 @@ export default function RepositoryLoadingCard() {
 const styles = StyleSheet.create({
   content: {
     flex: 1,
-    maxHeight: 144,
+    height: 144,
     backgroundColor: colors.lighterGray,
     borderColor: colors.lightGray,
     borderWidth: 1,
