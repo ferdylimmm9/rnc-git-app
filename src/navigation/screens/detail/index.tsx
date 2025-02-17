@@ -1,13 +1,10 @@
 import { Linking, StyleSheet, TouchableOpacity, View } from "react-native";
-import { RootStackScreenProps } from "../types";
-import { detailDummyInformation, dummyInformation } from "../../dummy";
-import Container from "../../components/container";
-import Image from "../../components/image";
-import Text from "../../components/text";
+import { RootStackScreenProps } from "../../types";
+import { detailDummyInformation } from "../../../dummy";
+import Container from "../../../components/container";
+import Image from "../../../components/image";
+import Text from "../../../components/text";
 import {
-  CaretDown,
-  CaretLeft,
-  Command,
   Eye,
   GitBranch,
   GitFork,
@@ -17,23 +14,23 @@ import {
   Star,
   TerminalWindow,
 } from "phosphor-react-native";
-import colors from "../../constant/color.constant";
-import ProgrammingLanguageLabel from "../../components/programming-language-label";
-import Button from "../../components/button";
-import Badge from "../../components/badge";
-import * as Clipboard from "expo-clipboard";
-import { Toast } from "toastify-react-native";
-import useCopyClipboard from "../../hooks/use-copy-clipboard";
-import BackButton from "../../components/back-button";
+import colors from "../../../constant/color.constant";
+import ProgrammingLanguageLabel from "../../../components/programming-language-label";
+import Badge from "../../../components/badge";
+import useCopyClipboard from "../../../hooks/use-copy-clipboard";
 
 export function Detail({ route }: RootStackScreenProps<"Detail">) {
   const owner = detailDummyInformation.owner;
   const copyToClipboard = useCopyClipboard();
 
   return (
-    <Container>
+    <Container
+      headers={{
+        back: true,
+        withBackLabel: true,
+      }}
+    >
       <View style={{ gap: 16 }}>
-        <BackButton withBackLabel />
         <View
           style={{
             flexDirection: "row",

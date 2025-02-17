@@ -1,10 +1,10 @@
 import { StyleSheet, TouchableOpacity, View } from "react-native";
-import { RepositoryType } from "../types/model.type";
-import colors from "../constant/color.constant";
-import Text from "./text";
-import ProgrammingLanguageLabel from "./programming-language-label";
+import { RepositoryType } from "../../../../types/model.type";
+import colors from "../../../../constant/color.constant";
+import Text from "../../../../components/text";
+import ProgrammingLanguageLabel from "../../../../components/programming-language-label";
 import { GitFork, Scales, Star } from "phosphor-react-native";
-import Badge from "./badge";
+import Badge from "../../../../components/badge";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 

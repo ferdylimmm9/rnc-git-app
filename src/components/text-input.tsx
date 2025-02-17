@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     color: colors.white,
     backgroundColor: "transparent",
     height: 36,
+    maxHeight: 36,
     borderRadius: 8,
     paddingHorizontal: 8,
   },

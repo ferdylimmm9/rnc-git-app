@@ -7,7 +7,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import colors from "../constant/color.constant";
 import { Detail } from "./screens/detail";
 import { RootStackParamList } from "./types";
-import ToastManager, { Toast } from "toastify-react-native";
+import ToastManager from "toastify-react-native";
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 

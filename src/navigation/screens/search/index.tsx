@@ -1,44 +1,35 @@
 import { Dimensions, StyleSheet, TouchableOpacity, View } from "react-native";
-import Container from "../../components/container";
+import Container from "../../../components/container";
 import React from "react";
-import TextInput from "../../components/text-input";
+import TextInput from "../../../components/text-input";
 import { FlashList } from "@shopify/flash-list";
-import { dummyList, dummySearch } from "../../dummy";
-import { CaretLeft, X } from "phosphor-react-native";
-import colors from "../../constant/color.constant";
-import Text from "../../components/text";
-import useSearchRepositories from "../../hooks/use-search-repositories";
-import Image from "../../components/image";
+import { dummyList } from "../../../dummy";
+import { X } from "phosphor-react-native";
+import colors from "../../../constant/color.constant";
+import Text from "../../../components/text";
+import useSearchRepositories from "../../../hooks/use-search-repositories";
+import Image from "../../../components/image";
 import { useNavigation } from "@react-navigation/native";
-import BackButton from "../../components/back-button";
 
 export function Search() {
   const { navigate } = useNavigation();
   const { search, onChange, onSubmitEditing } = useSearchRepositories();
   return (
-    <Container>
-      <View style={styles.container}>
-        <View
-          style={[
-            styles.between,
-            {
-              gap: 16,
-              maxHeight: 32,
-            },
-          ]}
-        >
-          <BackButton />
+    <Container
+      headers={{
+        back: true,
+        mainComponent: (
           <TextInput
             placeholder="Search Repository"
             isFocusFirstTime
-            style={{
-              flex: 1,
-            }}
             value={search}
             onChange={onChange}
             onSubmitEditing={onSubmitEditing}
           />
-        </View>
+        ),
+      }}
+    >
+      <View style={styles.container}>
         <Text color="white" weight="bold">
           Recent
         </Text>

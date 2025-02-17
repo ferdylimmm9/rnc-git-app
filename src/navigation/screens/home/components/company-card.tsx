@@ -1,15 +1,15 @@
 import { StyleSheet, View } from "react-native";
-import { OrganizationType } from "../types/model.type";
-import Text from "./text";
+import { OrganizationType } from "../../../../types/model.type";
+import Text from "../../../../components/text";
 import { MapPin, Users } from "phosphor-react-native";
-import colors from "../constant/color.constant";
-import Image from "./image";
+import colors from "../../../../constant/color.constant";
+import Image from "../../../../components/image";
 
-interface OrganizationCardProps {
+interface CompanyCardProps {
   data: OrganizationType;
 }
 
-export default function OrganizationCard(props: OrganizationCardProps) {
+export default function CompanyCard(props: CompanyCardProps) {
   const { name, description, followers, location, avatar_url } = props.data;
   return (
     <View style={styles.container}>
