@@ -1,65 +1,106 @@
-# Starter Template with React Navigation
+# React Native Assessment
 
-This is a minimal starter template for React Native apps using Expo and React Navigation.
+## User Story
 
-It includes the following:
+1. **As a User, I should be able to view all open-source Repositories of the React Native Community:**
+   - Repository name
+   - Repository description
+   - Pagination with a limit of 10 at a time
+   
+2. **As a User, I should be able to scroll down to load more Repositories.**
 
-- Example [Native Stack](https://reactnavigation.org/docs/native-stack-navigator) with a nested [Bottom Tab](https://reactnavigation.org/docs/bottom-tab-navigator)
-- Web support with [React Native for Web](https://necolas.github.io/react-native-web/)
-- TypeScript support and configured for React Navigation
-- Automatic deep link and URL handling configuration
-- Expo [Development Build](https://docs.expo.dev/develop/development-builds/introduction/) with [Continuous Native Generation](https://docs.expo.dev/workflow/continuous-native-generation/)
-- Edge-to-edge configured on Android with [`react-native-edge-to-edge`](https://www.npmjs.com/package/react-native-edge-to-edge)
+3. **As a User, I should be able to search for Repositories:**
+   - Search using repository name
 
-## Getting Started
-
-1. Create a new project using this template:
-
-   ```sh
-   npx create-expo-app@latest --template react-navigation/template
-   ```
-
-2. Edit the `app.json` file to configure the `name`, `slug`, `scheme` and bundle identifiers (`ios.bundleIdentifier` and `android.bundleIdentifier`) for your app.
-
-3. Edit the `src/App.tsx` file to start working on your app.
-
-## Running the app
-
-- Install the dependencies:
-
-  ```sh
-  npm install
-  ```
-
-- Start the development server:
-
-  ```sh
-  npm start
-  ```
-
-- Build and run iOS and Android development builds:
-
-  ```sh
-  npm run ios
-  # or
-  npm run android
-  ```
-
-- In the terminal running the development server, press `i` to open the iOS simulator, `a` to open the Android device or emulator, or `w` to open the web browser.
-
-## Notes
-
-This project uses a [development build](https://docs.expo.dev/develop/development-builds/introduction/) and cannot be run with [Expo Go](https://expo.dev/go). To run the app with Expo Go, edit the `package.json` file, remove the `expo-dev-client` package and `--dev-client` flag from the `start` script. However, Edge-to-edge won't work on Expo Go.
-
-We highly recommend using the development builds for normal development and testing.
-
-The `ios` and `android` folder are gitignored in the project by default as they are automatically generated during the build process ([Continuous Native Generation](https://docs.expo.dev/workflow/continuous-native-generation/)). This means that you should not edit these folders directly and use [config plugins](https://docs.expo.dev/config-plugins/) instead. However, if you need to edit these folders, you can remove them from the `.gitignore` file so that they are tracked by git.
-
-## Resources
-
-- [React Navigation documentation](https://reactnavigation.org/)
-- [Expo documentation](https://docs.expo.dev/)
+4. **As a User, I should be able to tap on a Repository and view its details in a separate screen:**
+   - Repository name
+   - Repository description
+   - Number of stars
+   - Number of forks
+   - Number of watchers
+   - Programming language
 
 ---
 
-Demo assets are from [lucide.dev](https://lucide.dev/)
+## Required Tools
+
+- **Redux**: For state management
+- **Redux Saga**: For side-effects management
+- **Axios**: For making HTTP requests
+- **React Hook**: For managing component states
+
+---
+
+## Additional Tools
+
+- **expo-image**: Native image performance issues; expo-image is an alternative for better performance
+- **@shopify/flash-list**: FlatList performance issues; flash list is an alternative
+- **expo**: Used for debugging in development environments
+- **react-native-mmkv**: Alternative to AsyncStorage with better performance
+- **phosphor-react-native**: Icons library for React Native
+- **react-native-safe-area-context**: Helps control the safe area on phones with notches
+- **toastify-react-native**: Toast component for displaying messages
+- **expo-clipboard**: Helps copy content to clipboard
+
+---
+
+## API List
+
+1. **Get Details of React Native Community**
+   ```http
+   GET https://api.github.com/orgs/react-native-community
+   ```
+
+2. **Get All Open-Source Repositories (with Pagination)**
+   ```http
+   GET https://api.github.com/orgs/react-native-community/repos?per_page=10&page={page}
+   ```
+
+3. **Search for Repositories by Name**
+   ```http
+   GET https://api.github.com/search/repositories?q={query}+org:react-native-community
+   ```
+
+4. **Get Repository Details**
+   ```http
+   GET https://api.github.com/repos/react-native-community/{repo_name}
+   ```
+
+---
+
+## UX Details
+
+1. **Handle Network Error View**: Display appropriate error messages when network issues occur.
+2. **Throttle Search Requests**: Minimize the number of requests sent to GitHub by implementing throttling.
+3. **User Search History**: Store and retrieve user search history to enhance user experience.
+4. **Pull-to-Refresh**: Implement pull-to-refresh functionality to fetch the latest data.
+5. **Loading State View**: Show loading indicators when network requests are in progress.
+
+---
+
+## Technical Details
+
+1. **Search Page Navigation**: Automatically focus the search input field when the user navigates to the search page.
+2. **Pagination Handling**: Manually handle pagination for fetching repositories to optimize network requests.
+3. **Save Search Results**: Store search results in **MMKV storage** after the user taps on a repository for viewing details.
+
+---
+
+## Design Inspiration
+
+- **Instagram**
+- **GitHub**
+
+---
+
+## Steps
+
+1. **Create a React Native App**: Set up the basic project structure.
+2. **Setup React Navigation**: Configure navigation for different screens.
+3. **Add Design Tokens**: Implement design tokens for consistent UI across the app.
+4. **Get Data from API & Design with Dummy**: Start by using dummy data to design the UI.
+5. **Setup Redux and React Saga**: Set up Redux for state management and React Saga for side effects handling.
+6. **Integrate APIs into Redux + React Saga**: Fetch real data from the GitHub API using Redux and React Saga.
+7. **Replace Dummy Data with API Data**: Replace the dummy data with real data managed by Redux and fetched by React Saga.
+
+---
