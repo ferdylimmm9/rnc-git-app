@@ -41,7 +41,7 @@ function* fetchReposSaga(action: { type: string; page: number }) {
   }
 }
 
-function* searchReposSaga(action: {
+function* fetchSearchReposSaga(action: {
   type: string;
   query: string;
   page: number;
@@ -95,7 +95,7 @@ function* fetchOrganizationSaga() {
 
 export function* watchGithubSagas() {
   yield takeLatest(FETCH_REPOS_REQUEST, fetchReposSaga);
-  yield takeLatest(SEARCH_REPOS_REQUEST, searchReposSaga);
+  yield takeLatest(SEARCH_REPOS_REQUEST, fetchSearchReposSaga);
   yield takeLatest(FETCH_REPO_DETAILS_REQUEST, fetchRepoDetailsSaga);
   yield takeLatest(FETCH_ORGANIZATION_REQUEST, fetchOrganizationSaga);
 }

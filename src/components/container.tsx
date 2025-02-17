@@ -4,7 +4,6 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
-  View,
 } from "react-native";
 import colors from "../constant/color.constant";
 import { useSafeAreaInsets } from "react-native-safe-area-context";

@@ -3,7 +3,6 @@ import {
   StyleSheet,
   TouchableOpacity,
   TouchableOpacityProps,
-  View,
 } from "react-native";
 import Text from "./text";
 import button, { ButtonVariantType } from "../constant/button.constant";
