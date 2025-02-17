@@ -4,8 +4,8 @@ import {
   fetchReposSuccess,
   fetchReposFailure,
   SEARCH_REPOS_REQUEST,
-  searchReposSuccess,
-  searchReposFailure,
+  fetchSearchReposSuccess,
+  fetchSearchReposFailure,
   FETCH_REPO_DETAILS_REQUEST,
   fetchRepoDetailsSuccess,
   fetchRepoDetailsFailure,
@@ -51,14 +51,14 @@ function* fetchSearchReposSaga(action: {
       fetchSearchRepos,
       action.query,
     );
-    yield put(searchReposSuccess(data));
+    yield put(fetchSearchReposSuccess(data));
   } catch (error: any) {
     const errorPayload: ApiErrorType = {
       message: error.response?.data?.message || error.message,
       status: error.response?.status || 500,
       documentation_url: error.response?.data?.documentation_url,
     };
-    yield put(searchReposFailure(errorPayload));
+    yield put(fetchSearchReposFailure(errorPayload));
   }
 }
 

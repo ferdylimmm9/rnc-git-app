@@ -2,7 +2,7 @@ import React from "react";
 import { TextInputSubmitEditingEventData } from "react-native";
 import { NativeSyntheticEvent, TextInputChangeEventData } from "react-native";
 import { useDispatch } from "react-redux";
-import { searchReposRequest } from "../redux/actions/github-actions";
+import { fetchSearchReposRequest } from "../redux/actions/github-actions";
 import useGithubSelector from "./use-github-selector";
 import { SearchType } from "../types/model.type";
 import { SearchHistory } from "../repositories/search-history";
@@ -57,12 +57,12 @@ export default function useSearchRepositories() {
   );
 
   const onRefresh = React.useCallback(() => {
-    dispatch(searchReposRequest(q));
+    dispatch(fetchSearchReposRequest(q));
   }, [dispatch]);
 
   React.useEffect(() => {
     if (q === "") return;
-    dispatch(searchReposRequest(q));
+    dispatch(fetchSearchReposRequest(q));
   }, [q]);
 
   React.useEffect(() => {

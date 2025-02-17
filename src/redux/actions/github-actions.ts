@@ -39,17 +39,17 @@ export const fetchReposFailure = (error: ApiErrorType) => ({
   payload: error,
 });
 
-export const searchReposRequest = (query: string) => ({
+export const fetchSearchReposRequest = (query: string) => ({
   type: SEARCH_REPOS_REQUEST,
   query,
 });
 
-export const searchReposSuccess = (data: SearchType) => ({
+export const fetchSearchReposSuccess = (data: SearchType) => ({
   type: SEARCH_REPOS_SUCCESS,
   payload: data,
 });
 
-export const searchReposFailure = (error: ApiErrorType) => ({
+export const fetchSearchReposFailure = (error: ApiErrorType) => ({
   type: SEARCH_REPOS_FAILURE,
   payload: error,
 });
