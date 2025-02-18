@@ -38,12 +38,21 @@ export function Home() {
       onReachBottom={handleLoadMore}
       headers={{
         mainComponent: (
-          <TouchableOpacity
-            onPress={() => navigate("Search")}
-            style={{ backgroundColor: colors.brand }}
+          <View
+            style={{
+              flex: 1,
+              position: "relative",
+            }}
           >
             <TextInput placeholder="Search Repository" readOnly />
-          </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigate("Search")}
+              style={{
+                position: "absolute",
+                inset: 0,
+              }}
+            />
+          </View>
         ),
       }}
     >

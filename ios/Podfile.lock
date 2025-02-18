@@ -6,7 +6,7 @@ PODS:
   - EXJSONUtils (0.14.0)
   - EXManifests (0.15.5):
     - ExpoModulesCore
-  - Expo (52.0.33):
+  - Expo (52.0.35):
     - ExpoModulesCore
   - expo-dev-client (5.0.12):
     - EXManifests
@@ -231,7 +231,7 @@ PODS:
     - SDWebImageSVGCoder (~> 1.7.0)
   - ExpoKeepAwake (14.0.2):
     - ExpoModulesCore
-  - ExpoModulesCore (2.2.1):
+  - ExpoModulesCore (2.2.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -254,7 +254,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - ExpoSplashScreen (0.29.21):
+  - ExpoSplashScreen (0.29.22):
     - ExpoModulesCore
   - ExpoSystemUI (4.0.8):
     - ExpoModulesCore
@@ -1947,7 +1947,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNSVG (15.11.1):
+  - RNSVG (15.8.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1967,9 +1967,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNSVG/common (= 15.11.1)
+    - RNSVG/common (= 15.8.0)
     - Yoga
-  - RNSVG/common (15.11.1):
+  - RNSVG/common (15.8.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2284,7 +2284,7 @@ SPEC CHECKSUMS:
   EXConstants: aa93a3e70f8b37c81a80931cfd23f860b1819167
   EXJSONUtils: 01fc7492b66c234e395dcffdd5f53439c5c29c93
   EXManifests: 81324537a654111964f6e7994dbc351a4233dcfa
-  Expo: eb362d6461fd355f2d50786daad5fc3c377599e3
+  Expo: 684b9146eabc19a5aa6994f8d6b9131f6facbb3b
   expo-dev-client: be653fa8a57337215e8557c07ddced0e8c576af6
   expo-dev-launcher: e791741ba46eafa8db5fc72c387ffee208bdb29c
   expo-dev-menu: 3bdb3a7eda40823ef01975ef39bc319aa068b483
@@ -2295,8 +2295,8 @@ SPEC CHECKSUMS:
   ExpoFont: 8b14db1afebf62e9774613a082e402985f4e747c
   ExpoImage: de05a570d6a2240769b2896ced06cbd00240eb61
   ExpoKeepAwake: 1f74cdf53ab3b3aeb7110f18eb053c92e7c3e710
-  ExpoModulesCore: dfb93d3c19f8fc950aa2ef74a3733da065dbacef
-  ExpoSplashScreen: 2625fffb137856c82c32d6f25e7ee97249bdc0ee
+  ExpoModulesCore: 561a787bc626ab9bcfee2a688bd588bf2667405f
+  ExpoSplashScreen: 643666b96a84e8d97d55fac43926fb4183c692d9
   ExpoSystemUI: ba4507df7d8d15f5e1694a3c7fc6bc3cca3803e5
   EXUpdatesInterface: 1dcebac98ac5dad4289e6ff2bd5616822e894397
   FBLazyVector: ca8044c9df513671c85167838b4188791b6f37e1
@@ -2366,7 +2366,7 @@ SPEC CHECKSUMS:
   RNFlashList: 2ad2738637fa763b87b763578feab47d3e67c4c1
   RNGestureHandler: fc5ce5bf284640d3af6431c3a5c3bc121e98d045
   RNScreens: d022507f2b6d76c73335e9e35aedcf7bb2f791b0
-  RNSVG: ea3e35f0375ac20449384fa89ce056ee0e0690ee
+  RNSVG: 536cd3c866c878faf72beaba166c8b02fe2b762b
   SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
   SDWebImageAVIFCoder: 00310d246aab3232ce77f1d8f0076f8c4b021d90
   SDWebImageSVGCoder: 15a300a97ec1c8ac958f009c02220ac0402e936c

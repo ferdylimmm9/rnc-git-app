@@ -10,10 +10,12 @@ import { RootStackParamList } from "./types";
 import ToastManager from "toastify-react-native";
 import store from "../redux/store/stores";
 import { Provider } from "react-redux";
+import * as SplashScreen from "expo-splash-screen";
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 export const Navigation = () => {
+  
   return (
     <Provider store={store}>
       <SafeAreaProvider>

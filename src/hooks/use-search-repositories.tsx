@@ -40,7 +40,8 @@ export default function useSearchRepositories() {
     (item: SearchType["items"][0]) => {
       SearchHistory.set(item);
       setRecent((prev) => {
-        return [item, ...prev];
+        const curr = prev.filter((prev) => prev.name !== item.name);
+        return [item, ...curr];
       });
     },
     [setRecent]

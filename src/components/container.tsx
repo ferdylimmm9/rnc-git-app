@@ -9,6 +9,7 @@ import colors from "../constant/color.constant";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import React from "react";
 import Header, { HeaderProps } from "./header";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 interface ContainerProps extends React.ComponentProps<typeof ScrollView> {
   gap?: number;
@@ -34,24 +35,25 @@ export default function Container(props: ContainerProps) {
 
   return (
     <>
-      <StatusBar backgroundColor={colors.brand} />
-      <ScrollView
-        style={[
-          styles.container,
-          {
-            paddingTop: insets.top,
-            paddingBottom: insets.bottom,
-            gap,
-          },
-          style,
-        ]}
-        stickyHeaderIndices={props.headers ? [0] : stickyHeaderIndices}
-        onScroll={handleScroll}
-        {...rest}
-      >
-        {props.headers && <Header {...props.headers} />}
-        {children}
-      </ScrollView>
+      <StatusBar backgroundColor="#101929" />
+      <SafeAreaView style={{ flex: 1, backgroundColor: "#101929" }}>
+        <ScrollView
+          style={[
+            styles.container,
+            {
+              gap,
+            },
+            style,
+          ]}
+          stickyHeaderIndices={props.headers ? [0] : stickyHeaderIndices}
+          onScroll={handleScroll}
+          contentContainerStyle={{ flexGrow: 1 }}
+          {...rest}
+        >
+          {props.headers && <Header {...props.headers} />}
+          {children}
+        </ScrollView>
+      </SafeAreaView>
     </>
   );
 }
